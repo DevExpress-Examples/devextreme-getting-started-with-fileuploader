@@ -1,16 +1,22 @@
-import { useCallback, useState } from 'react';
 import './App.css';
 import 'devextreme/dist/css/dx.material.blue.light.compact.css';
-import Button from 'devextreme-react/button';
+import FileUploader from 'devextreme-react/file-uploader';
 
 function App(): JSX.Element {
-  var [count, setCount] = useState<number>(0);
-  const clickHandler = useCallback(() => {
-    setCount((prev) => prev + 1);
-  }, [setCount]);
   return (
-    <div className="main">
-      <Button text={`Click count: ${count}`} onClick={clickHandler} />
+    <div className="demo-container">
+      <div className="file-uploader-block">
+        <FileUploader
+          id="file-uploader"
+          multiple={true}
+          uploadMode="useButtons"
+          allowCanceling={true}
+          accept="image/*"
+          labelText="Drop Images Below to Upload..."
+          maxFileSize={32000000}
+          dropZone=".file-uploader-block"
+        />
+      </div>
     </div>
   );
 }
