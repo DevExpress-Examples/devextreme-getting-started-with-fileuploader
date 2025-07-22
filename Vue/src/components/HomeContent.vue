@@ -1,28 +1,20 @@
 <script setup lang="ts">
-import { computed, ref } from 'vue';
-
 import 'devextreme/dist/css/dx.material.blue.light.compact.css';
-import DxButton from 'devextreme-vue/button';
-
-const props = defineProps({
-  text: {
-    type: String,
-    default: 'count',
-  },
-});
-const count = ref(0);
-const buttonText = computed<string>(
-  () => `Click ${props.text}: ${count.value}`
-);
-function clickHandler() {
-  count.value += 1;
-}
+import DxFileUploader from 'devextreme-vue/file-uploader';
 </script>
 <template>
-  <div>
-    <DxButton
-      :text="buttonText"
-      @click="clickHandler"
-    />
+  <div class="demo-container">
+    <div class="file-uploader-block">
+      <DxFileUploader
+        id="file-uploader"
+        :multiple="true"
+        upload-mode="useButtons"
+        :allow-canceling="true"
+        accept="image/*"
+        label-text="Drop Images Below to Upload..."
+        :max-file-size="32000000"
+        drop-zone=".file-uploader-block"
+      />
+    </div>
   </div>
 </template>
