@@ -25,6 +25,6 @@
     text-align: center;
 }
 
-.dx-fileuploader-wrapper {
-    overflow-y: scroll;
+#file-uploader .dx-fileuploader-wrapper {
+  overflow-y: auto;
 }
