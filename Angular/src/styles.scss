@@ -1,8 +1,6 @@
 .demo-container {
   margin: 50px;
   height: 50vh;
-  display: flex;
-  flex-direction: column;
   align-items: center;
 }
 
@@ -15,14 +13,12 @@
 
 #file-uploader {
   height: 100%;
-  align-items: center;
 }
 
 .dx-fileuploader-input-wrapper {
   position: relative;
-  top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%);
   display: flex;
   flex-direction: column;
   align-items: center;
