@@ -1,3 +1,14 @@
-<div class="default-style">
-  <dx-button [text]="buttonText" (onClick)="onClick($event)"></dx-button>
+<div class="demo-container">
+  <div class="file-uploader-block">
+    <dx-file-uploader
+      id="file-uploader"
+      [multiple]="true"
+      uploadMode="useButtons"
+      [allowCanceling]="true"
+      accept="image/*"
+      labelText="Drop Images Here to Upload..."
+      [maxFileSize]="32000000"
+      dropZone=".file-uploader-block"
+    ></dx-file-uploader>
+  </div>
 </div>
