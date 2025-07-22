@@ -1,10 +1,11 @@
 $(() => {
-  let count = 0;
-  $('#btn').dxButton({
-    text: `Click count: ${count}`,
-    onClick(e) {
-      count += 1;
-      e.component.option('text', `Click count: ${count}`);
-    },
+  $('#file-uploader').dxFileUploader({
+    multiple: true,
+    uploadMode: 'useButtons',
+    allowCanceling: true,
+    accept: 'image/*',
+    labelText: 'Drop Images Here to Upload...',
+    maxFileSize: 32000000,
+    dropZone: '.file-uploader-block',
   });
 });
