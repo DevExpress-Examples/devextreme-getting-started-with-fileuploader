@@ -1,5 +1,5 @@
 $(() => {
-  $('#fileUploader').dxFileUploader({
+  $('#file-uploader').dxFileUploader({
     multiple: true,
     uploadMode: 'useButtons',
     allowCanceling: true,
