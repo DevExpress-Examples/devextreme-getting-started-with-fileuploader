@@ -5,7 +5,7 @@ $(() => {
     allowCanceling: true,
     accept: 'image/*',
     labelText: 'Drop Images Here to Upload...',
-    maxFileSize: 32000,
+    maxFileSize: 32000000,
     dropZone: '.file-uploader-block',
   });
 });
