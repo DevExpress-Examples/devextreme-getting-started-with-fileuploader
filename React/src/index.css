@@ -15,7 +15,6 @@ code {
 .demo-container {
   margin: 50px;
   height: 50vh;
-  align-items: center;
 }
 
 .file-uploader-block {
@@ -37,6 +36,9 @@ code {
 }
 
 .dx-fileuploader-input-container {
-  width: 75%;
   text-align: center;
+}
+
+#file-uploader .dx-fileuploader-wrapper {
+  overflow-y: auto;
 }
