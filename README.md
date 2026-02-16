@@ -28,7 +28,7 @@ This repository stores code for the following DevExpress tutorial: [Getting Star
 
 - [FileUploader - API Reference](https://js.devexpress.com/Documentation/ApiReference/UI_Components/dxFileUploader/)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=devextreme-getting-started-with-fileuploader&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=devextreme-getting-started-with-fileuploader&~~~was_helpful=no)
 
